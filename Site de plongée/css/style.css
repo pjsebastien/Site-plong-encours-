@@ -1,0 +1,515 @@
+/***********Général**************/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+.g {
+  color: #15cef2;
+}
+
+.b {
+  color: white;
+}
+
+/***************************************************Acceuil*****************************************************/
+#acceuil {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#video {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+  background-size: cover;
+  transition: 0s opacity;
+}
+
+/**********Gros titre ************/
+.titre {
+  font-family: "Limelight", cursive;
+  position: relative;
+  top: 25vh;
+  left: 24vw;
+  width: 75vw;
+  color: white;
+}
+
+.titreGros {
+  font-size: 16vw;
+}
+
+.sousTitre {
+  position: relative;
+  bottom: 4vw;
+  font-size: 2vw;
+}
+
+/********Menu reseaux sociaux*************/
+
+.logos {
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+}
+
+.logos:hover {
+  opacity: 1;
+  padding: 2px;
+}
+
+.navLogos {
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  text-align: center;
+}
+
+.menuLogos li {
+  display: inline;
+  padding: 5px;
+}
+
+/***********Menu principal*******************/
+
+.navMenu {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  bottom: 10px;
+  text-align: center;
+}
+
+.menuMain li {
+  font-size: 2vw;
+  display: inline;
+  padding: 25px;
+}
+
+.menuName {
+  color: white;
+  font-family: "Limelight", cursive;
+  opacity: 0.75;
+}
+
+/****************************************Les meilleurs spots *******************************************/
+
+/*******titre***********/
+
+.spotTitre {
+  text-align: center;
+  background-color: black;
+  font-size: 2.5vw;
+  padding: 1vw 0;
+  color: #15cef2;
+  font-family: "Limelight", cursive, sans-serif;
+}
+
+/********Les spots********/
+
+#spots {
+  width: 100%;
+}
+
+.spotIntro,
+.spotCarousel,
+.spotFin {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.spotIntro img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  opacity: 0.85;
+}
+.textSpot {
+  position: absolute;
+  background: rgba(63, 60, 60, 0.3);
+  text-align: center;
+  width: 40%;
+  height: 100%;
+  left: 30%;
+  z-index: 1;
+  font-size: 20px;
+  color: white;
+  font-family: "Kanit", cursive, sans-serif;
+  font-weight: bold;
+}
+.textSpot h3,
+p {
+  position: relative;
+  top: 20%;
+}
+
+.spotCarousel {
+  background-color: #2f7175;
+}
+
+.spotFin {
+  background-color: #99c0c2;
+}
+
+.spotFin img {
+  position: absolute;
+  width: 50%;
+  height: 400px;
+  object-fit: cover;
+  right: 5%;
+  top: 50px;
+  border-radius: 25px;
+}
+
+.textFin {
+  position: absolute;
+  background: rgba(12, 9, 170, 0.1);
+  text-align: center;
+  width: 35%;
+  height: 100%;
+  left: 5%;
+  z-index: 1;
+  font-size: 20px;
+  color: #2f7175;
+  font-family: "Kanit", cursive, sans-serif;
+  font-weight: bold;
+}
+.textFin h3,
+p {
+  position: relative;
+  top: 20%;
+}
+
+/*******************************************************Clubs**********************************************************/
+
+/********Titre club********/
+
+.clubTitre {
+  text-align: center;
+  background-color: black;
+  font-size: 2.5vw;
+  padding: 1vw 0;
+  color: #15cef2;
+  font-family: "Limelight", cursive, sans-serif;
+}
+
+#clubs {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.photoClub {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.reunion {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}
+
+.pos1,
+.pos2,
+.pos3,
+.pos4 {
+  position: absolute;
+  z-index: 10;
+  width: 35px;
+  height: 35px;
+  opacity: 0.7;
+}
+
+.pos:hover {
+  opacity: 1;
+  padding: 2px;
+}
+
+.pos1 {
+  top: 200px;
+  left: 58px;
+}
+.pos2 {
+  top: 280px;
+  left: 85px;
+}
+.pos3 {
+  top: 320px;
+  left: 120px;
+}
+.pos4 {
+  top: 360px;
+  left: 200px;
+}
+
+.diver {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 210px;
+  left: 220px;
+}
+
+.textClub {
+  position: absolute;
+  width: 40%;
+  left: 50%;
+  top: 20%;
+  font-family: "Kanit", cursive, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+.textClub1 {
+  display: none;
+  position: absolute;
+  width: 40%;
+  left: 50%;
+  top: 20%;
+  font-family: "Kanit", cursive, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+.textClub2 {
+  display: none;
+  position: absolute;
+  width: 40%;
+  left: 50%;
+  top: 20%;
+  font-family: "Kanit", cursive, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+.textClub3 {
+  display: none;
+  position: absolute;
+  width: 40%;
+  left: 50%;
+  top: 20%;
+  font-family: "Kanit", cursive, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+.textClub4 {
+  display: none;
+  position: absolute;
+  width: 40%;
+  left: 50%;
+  top: 20%;
+  font-family: "Kanit", cursive, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.pos1:hover ~ .textClub {
+  display: none;
+}
+.pos1:hover ~ .textClub1 {
+  display: block;
+}
+.pos2:hover ~ .textClub {
+  display: none;
+}
+.pos2:hover ~ .textClub2 {
+  display: block;
+}
+.pos3:hover ~ .textClub {
+  display: none;
+}
+.pos3:hover ~ .textClub3 {
+  display: block;
+}
+.pos4:hover ~ .textClub {
+  display: none;
+}
+.pos4:hover ~ .textClub4 {
+  display: block;
+}
+
+/***************************************************La Faune Marine****************************************/
+
+.fauneTitre {
+  text-align: center;
+  background-color: black;
+  font-size: 2.5vw;
+  padding: 1vw 0;
+  color: #15cef2;
+  font-family: "Limelight", cursive, sans-serif;
+}
+
+#faune {
+  width: 100%;
+}
+
+.tortue,
+.poisson,
+.raie {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.tortue img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.textTortue {
+  position: absolute;
+  background: rgba(63, 60, 60, 0.3);
+  text-align: center;
+  width: 40%;
+  height: 100%;
+  left: 30%;
+  z-index: 1;
+  font-size: 20px;
+  color: white;
+  font-family: "Kanit", cursive, sans-serif;
+  font-weight: bold;
+}
+.textTortue h3,
+p {
+  position: relative;
+  top: 20%;
+}
+
+.poisson {
+  background-color: #2f7175;
+}
+
+.raie {
+  background-color: #99c0c2;
+}
+
+.raie img {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  left: 5%;
+  opacity: 0.7;
+}
+.raie img:hover {
+  opacity: 1;
+}
+
+.textRaie {
+  position: absolute;
+  background: rgba(12, 9, 170, 0.1);
+  text-align: center;
+  border-radius: 20px;
+  top: 25%;
+  width: 35%;
+  height: auto;
+  right: 5%;
+  z-index: 1;
+  font-size: 20px;
+  color: #2f7175;
+  font-family: "Kanit", cursive, sans-serif;
+  font-weight: bold;
+}
+
+.poisson {
+}
+
+.raie {
+}
+
+/***************************************Les Cétacés*******************************************/
+
+.cetacesTitre {
+  text-align: center;
+  background-color: black;
+  font-size: 2.5vw;
+  padding: 1vw 0;
+  color: #15cef2;
+  font-family: "Limelight", cursive, sans-serif;
+}
+
+#cetaces {
+  width: 100%;
+}
+
+.dauphin,
+.cetacesText,
+.baleine {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.dauphin img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  opacity: 0.75;
+}
+
+.cetacesText {
+  background: rgb(153, 192, 194);
+  background: radial-gradient(
+    circle,
+    rgba(153, 192, 194, 0.919502835313813) 48%,
+    rgba(47, 113, 117, 1) 100%
+  );
+}
+
+.textDauphin {
+  position: absolute;
+  width: 60%;
+  left: 2%;
+  top: 2%;
+  font-size: 20px;
+  color: #000000;
+  font-family: "Kanit", cursive, sans-serif;
+  font-weight: bold;
+  background: rgba(255, 254, 254, 0.3);
+}
+
+.effet {
+  position: relative;
+  width: 25%;
+  height: 500px;
+  left: 37.5%;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+}
+.textBaleine {
+  position: absolute;
+  width: 60%;
+  right: 2%;
+  bottom: 2%;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Kanit", cursive, sans-serif;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.baleine img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  opacity: 0.75;
+}
